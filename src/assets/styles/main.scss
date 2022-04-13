@@ -1,7 +1,24 @@
 @import "./fonts.scss";
+@import "./variable.scss";
+@import "./typography";
+@import "./mixins/breakpoints";
 
 body {
   font-family: 'Barlow Condensed', sans-serif;
-  background-color: #fff;
-  font-size: 140px;
+  background-color: $main-color;
+}
+
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @include md {
+    padding-left: 38.5px;
+    padding-right: 38.5px;
+  }
+
+  @include xl {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
 }
