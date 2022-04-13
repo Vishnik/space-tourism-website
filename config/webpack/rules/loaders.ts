@@ -12,9 +12,9 @@ export const css: webpack.RuleSetRule = {
   options: {
     sourceMap: true,
     importLoaders: 2,
-    modules: {
-      localIdentName: '[path][name]__[local]--[hash:base64:5]',
-    },
+    // modules: {
+    //   localIdentName: '[path][name]__[local]--[hash:base64:5]',
+    // },
   },
 };
 
